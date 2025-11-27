@@ -1,0 +1,71 @@
+/* Estilo geral da página */
+body {
+  font-family: Arial, sans-serif; /* Fonte padrão */
+  background: linear-gradient(135deg, #4facfe, #00f2fe); /* Fundo com gradiente */
+  display: flex; /* Centraliza o conteúdo */
+  justify-content: center; /* Alinha horizontalmente */
+  align-items: center; /* Alinha verticalmente */
+  height: 100vh; /* Ocupa toda a altura da tela */
+  margin: 0; /* Remove margens padrão */
+}
+
+/* Container do login */
+.login-container {
+  background: #fff; /* Fundo branco */
+  padding: 30px; /* Espaçamento interno */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2); /* Sombra */
+  width: 300px; /* Largura fixa */
+  text-align: center; /* Centraliza o texto */
+}
+
+/* Título */
+.login-container h2 {
+  margin-bottom: 20px; /* Espaço abaixo */
+  color: #333; /* Cor do texto */
+}
+
+/* Grupo de inputs */
+.input-group {
+  margin-bottom: 15px; /* Espaço entre os campos */
+  text-align: left; /* Alinha rótulos à esquerda */
+}
+
+/* Rótulos */
+.input-group label {
+  display: block; /* Ocupa toda a linha */
+  margin-bottom: 5px; /* Espaço abaixo */
+  font-weight: bold; /* Negrito */
+}
+
+/* Campos de entrada */
+.input-group input {
+  width: 100%; /* Ocupa toda a largura */
+  padding: 10px; /* Espaçamento interno */
+  border: 1px solid #ccc; /* Borda cinza */
+  border-radius: 5px; /* Bordas arredondadas */
+}
+
+/* Botão */
+button {
+  width: 100%; /* Ocupa toda a largura */
+  padding: 10px; /* Espaçamento interno */
+  background: #4facfe; /* Cor de fundo */
+  border: none; /* Remove borda padrão */
+  border-radius: 5px; /* Bordas arredondadas */
+  color: white; /* Texto branco */
+  font-size: 16px; /* Tamanho da fonte */
+  cursor: pointer; /* Cursor de mão */
+}
+
+/* Efeito hover no botão */
+button:hover {
+  background: #00c6fb; /* Muda a cor ao passar o mouse */
+}
+
+/* Mensagem de feedback */
+#message {
+  margin-top: 15px; /* Espaço acima */
+  font-size: 14px; /* Tamanho da fonte */
+  color: red; /* Cor padrão (erro) */
+}
