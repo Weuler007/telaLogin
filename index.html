@@ -1,39 +1,47 @@
 <!DOCTYPE html>
-<html lang="pt-BR"> <!-- Define o idioma da página como português do Brasil -->
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8"> <!-- Define a codificação de caracteres -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade em dispositivos móveis -->
-  <title>Tela de Login</title> <!-- Título da aba do navegador -->
-  <link rel="stylesheet" href="style.css"> <!-- Importa o arquivo CSS externo -->
+  <meta charset="UTF-8"> <!-- Codificação de caracteres -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade -->
+  <title>Tela de Login</title> <!-- Título da aba -->
+  <link rel="stylesheet" href="style.css"> <!-- Importa o CSS -->
 </head>
 <body>
-  <!-- Container principal da tela de login -->
-  <div class="login-container">
-    <h2>Login</h2> <!-- Título da tela -->
+  <!-- Área principal da página -->
+  <main>
+    <!-- Seção dedicada ao login -->
+    <section class="login-container" aria-labelledby="login-title">
+      <h1 id="login-title">Login</h1> <!-- Título principal da seção -->
 
-    <!-- Formulário de login -->
-    <form id="loginForm">
-      <!-- Campo de usuário -->
-      <div class="input-group">
-        <label for="username">Usuário</label> <!-- Rótulo do campo -->
-        <input type="text" id="username" placeholder="Digite seu usuário" required> <!-- Campo de texto obrigatório -->
-      </div>
+      <!-- Formulário de login -->
+      <form id="loginForm" action="#" method="post">
+        
+        <!-- Campo de usuário -->
+        <fieldset>
+          <legend>Dados de acesso</legend> <!-- Agrupamento semântico dos campos -->
+          
+          <div class="input-group">
+            <label for="username">Usuário</label>
+            <input type="text" id="username" name="username" placeholder="Digite seu usuário" required>
+          </div>
 
-      <!-- Campo de senha -->
-      <div class="input-group">
-        <label for="password">Senha</label> <!-- Rótulo do campo -->
-        <input type="password" id="password" placeholder="Digite sua senha" required> <!-- Campo de senha obrigatório -->
-      </div>
+          <!-- Campo de senha -->
+          <div class="input-group">
+            <label for="password">Senha</label>
+            <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+          </div>
+        </fieldset>
 
-      <!-- Botão de envio -->
-      <button type="submit">Entrar</button>
-    </form>
+        <!-- Botão de envio -->
+        <button type="submit">Entrar</button>
+      </form>
 
-    <!-- Mensagem de feedback (sucesso ou erro) -->
-    <p id="message"></p>
-  </div>
+      <!-- Mensagem de feedback -->
+      <p id="message" role="alert"></p>
+    </section>
+  </main>
 
-  <!-- Importa o arquivo JavaScript -->
+  <!-- Importa o JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>
